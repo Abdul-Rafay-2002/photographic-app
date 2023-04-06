@@ -1,0 +1,68 @@
+@import './index.css';
+
+.app__container {
+	width: 1440px;
+	min-height: 100vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.app__primary {
+	background-color: var(--primary-bg-color);
+	padding: 60px 20px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--primary-heading-color);
+	}
+
+	a,
+	p,
+	button,
+	span {
+		color: var(--primary-text-color);
+	}
+
+	a.button {
+		background-color: var(--primary-anchor-bg-color);
+
+		&:hover {
+			background-color: var(--primary-anchor-bg-hover-color);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+
+.app__secondary {
+	background-color: var(--secondary-bg-color);
+	padding: 60px 20px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--secondary-heading-color);
+	}
+
+	a,
+	p,
+	button,
+	span {
+		color: var(--secondary-text-color);
+	}
+
+	a.button {
+		background-color: var(--secondary-anchor-bg-color);
+
+		&:hover {
+			background-color: var(--secondary-anchor-bg-hover-color);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

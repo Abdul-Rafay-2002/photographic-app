@@ -1,0 +1,19 @@
+@import '../../index.css';
+
+.app__hero{
+    display: flex;
+    .app__hero-content{
+        width: 50%;
+        p{
+            margin: 20px 0;
+        }
+        a{
+            margin: 60px 0;
+            display: table;
+        }
+    }
+    .app__hero-image{
+        width: 50%;
+        text-align: center;
+    }
+}
