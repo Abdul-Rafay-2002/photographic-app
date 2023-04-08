@@ -3,7 +3,7 @@
 .app__hero{
     display: flex;
     .app__hero-content{
-        width: 50%;
+        width: 60%;
         p{
             margin: 20px 0;
         }
@@ -13,7 +13,7 @@
         }
     }
     .app__hero-image{
-        width: 50%;
+        width: 40%;
         text-align: center;
     }
 }

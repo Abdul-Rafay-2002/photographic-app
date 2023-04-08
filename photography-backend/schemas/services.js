@@ -11,8 +11,7 @@ export default {
         {
             name: 'description',
             title: 'Service Description',
-            type: 'array',
-            of: [{ type: 'block' }]
+            type: 'text',
         },
         {
             name: 'price',
