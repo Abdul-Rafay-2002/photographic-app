@@ -64,13 +64,14 @@ const MyServices = () => {
 					modules={[Pagination]}
 					slidesPerView={3}
 					spaceBetween={30}
+					draggable={true}
 					pagination={{ clickable: true }}
 					className='app__services'>
-					{servicesData.map((item, index) => (
 						<motion.div
 						  whileInView={{ x: [150, 0], opacity: [0, 1] }}
-							transition={{ duration: 1 }}
-							>
+						  transition={{ duration: 1 }}
+						  >
+						  {servicesData.map((item, index) => (
 							<SwiperSlide className='app__services-card' key={index}>
 								<div className='app__services-content'>
 									<h3>{item.title}</h3>
@@ -82,8 +83,8 @@ const MyServices = () => {
 									<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='simple' />
 								</div>
 							</SwiperSlide>
-						</motion.div>
 					))}
+					</motion.div>
 				</Swiper>
 			</div>
 		</div>

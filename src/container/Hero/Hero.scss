@@ -1,61 +1,49 @@
 @import '../../index.css';
-.app__primary{
-    @media screen and (max-width: 850px) {
-            padding-bottom: 0px;
-        }
-    .app__container{
-        @media screen and (max-width: 850px) {
-            margin-bottom: -7px;
-        }
-        .app__hero {
-                display: flex;
-                gap: 30px;
-                margin-top: 20px;
-        
-                @media screen and (max-width: 850px) {
-                    flex-direction: column;
-                }
-        
-                .app__hero-content {
-                    width: 60%;
-        
-                    p {
-                        margin: 20px 0;
-                    }
-        
-                    a {
-                        margin: 30px 0;
-                        display: table;
-                    }
-        
-                    @media screen and (max-width: 850px) {
-                        width: 100%;
-                    }
-                }
-        
-                .app__hero-image {
-                    width: 40%;
-                    text-align: center;
-        
-                    @media screen and (max-width: 850px) {
-                        width: 100%;
-                        margin: 50px auto auto auto;
-                    }
-        
-                    img {
-        
-                        @media screen and (max-width: 600px) {
-                            width: 50%;
-                            margin: auto;
-                        }
-        
-                        @media screen and (max-width: 400px) {
-                            width: 80%;
-                            margin: auto;
-                        }
-                    }
-                }
-            }
-        }
-    }
+.app__hero {
+	display: flex;
+	gap: 30px;
+	margin-top: 20px;
 
+	@media screen and (max-width: 850px) {
+		flex-direction: column;
+	}
+
+	.app__hero-content {
+		width: 60%;
+
+		p {
+			margin: 20px 0;
+		}
+
+		a {
+			margin: 30px 0;
+			display: table;
+		}
+
+		@media screen and (max-width: 850px) {
+			width: 100%;
+		}
+	}
+
+	.app__hero-image {
+		width: 40%;
+		text-align: center;
+
+		@media screen and (max-width: 850px) {
+			width: 100%;
+			margin: 50px auto auto auto;
+		}
+
+		img {
+			@media screen and (max-width: 600px) {
+				width: 50%;
+				margin: auto;
+			}
+
+			@media screen and (max-width: 400px) {
+				width: 80%;
+				margin: auto;
+			}
+		}
+	}
+}
