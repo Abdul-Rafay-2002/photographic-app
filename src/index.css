@@ -16,7 +16,7 @@ body {
 	scroll-padding-top: 40px;
 }
 body::-webkit-scrollbar {
-	width: 1em;
+	width: .8em;
 }
 
 body::-webkit-scrollbar-track {
@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
 	background-color: #2d6e7e;
-	outline: 1px solid #022c43;
+	border-radius: 40px;
 }
 
 :root {
