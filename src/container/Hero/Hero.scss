@@ -1,10 +1,15 @@
 @import '../../index.css';
 .app__primary{
-    padding-bottom: 0;
+    @media screen and (max-width: 850px) {
+            padding-bottom: 0px;
+        }
     .app__container{
-        margin-bottom: -7px;
+        @media screen and (max-width: 850px) {
+            margin-bottom: -7px;
+        }
         .app__hero {
                 display: flex;
+                gap: 30px;
                 margin-top: 20px;
         
                 @media screen and (max-width: 850px) {
