@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 	--H3-sm: 800 30px/38px 'Poppins',
         sans-serif;
 	--H4-sm: 600 28px/38px 'Poppins', sans-serif;
-	--H5-sm: 500 18px/24px 'Poppins',
+	--H5-sm: 500 18px/30px 'Poppins',
         sans-serif;
 	--H6-sm: 500 18px/29px 'Poppins', sans-serif;
 	--text-base-sm: 400 14px/24px 'Poppins', sans-serif;

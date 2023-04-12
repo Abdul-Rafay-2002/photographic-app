@@ -81,5 +81,8 @@
         color: #fff;
         width: 50%;
         margin: 40px auto;
+        @media screen and (max-width: 768px) {
+                width: 100%;
+            }
     }
 }
