@@ -1,0 +1,195 @@
+@import '../../index.css';
+
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--primary-heading-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 21px 3px rgba(0, 129, 138, 0.38);
+    -webkit-box-shadow: 0px 0px 21px 3px rgba(0, 129, 138, 0.38);
+    -moz-box-shadow: 0px 0px 21px 3px rgba(0, 129, 138, 0.38);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    .logo-wrapper {
+        width: 100px;
+        height: 70px;
+        overflow: hidden;
+
+        @media screen and (min-width: 1500px) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .logo-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    ul li a {
+        text-transform: capitalize;
+        font-weight: bold;
+        color: var(--primary-text-color);
+        padding: .5rem .8rem;
+        display: block;
+    }
+
+    ul li {
+        margin: 5px 0.5rem;
+        cursor: pointer;
+        position: relative;
+
+
+
+        @media screen and (min-width: 2000px) {
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    ul li a:before {
+        content: '';
+        height: 1px;
+        width: 0%;
+        background: var(--color-primary2);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    ul li:hover a:before {
+        width: 100%;
+        transition: all 0.2s ease;
+    }
+
+    ul li:hover,
+    ul li a.active {
+        background: var(--primary-anchor-bg-hover-color);
+        border-radius: 5px;
+        transition: all 0.2s ease;
+
+        &:last-child a svg,
+        &:nth-last-child(2) a svg {
+            transform: scale(1.4);
+            transition: all .2s ease;
+        }
+
+        &:last-child:hover,
+        &:nth-last-child(2):hover {
+            background: none;
+        }
+
+        a {
+            color: #fff;
+
+        }
+
+    }
+}
+
+.app__navbar-menu {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: #fff;
+    padding: 0.1rem 7px 10px 7px;
+    overflow: hidden;
+
+    .Open {
+        color: var(--anchorColor);
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        color: var(--color-primary);
+        cursor: pointer;
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        padding: 1rem;
+        width: 45%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+
+        @media screen and (max-width: 680px) {
+            width: 100%;
+        }
+
+        svg {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+            &:hover {
+                color: rgb(192, 13, 13);
+            }
+        }
+
+        li {
+            margin: 10px 0;
+            display: table;
+
+            a {
+                color: var(--secondary-text-color);
+                font-weight: bold;
+                text-transform: capitalize;
+
+                &:hover {
+                    color: var(--anchorHoverBGColor);
+                }
+            }
+        }
+
+    }
+
+    .mobile__logo-wrapper {
+        width: 160px;
+        height: 120px;
+        display: table;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}

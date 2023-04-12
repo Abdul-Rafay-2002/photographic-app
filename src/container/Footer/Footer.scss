@@ -1,0 +1,12 @@
+@import '../../index.css';
+
+.footer{
+    text-align: center;
+    padding: 20px 10px;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

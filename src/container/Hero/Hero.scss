@@ -1,19 +1,36 @@
 @import '../../index.css';
 
-.app__hero{
+.app__hero {
     display: flex;
-    .app__hero-content{
+    margin-top: 20px;
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+    }
+
+    .app__hero-content {
         width: 60%;
-        p{
+
+        p {
             margin: 20px 0;
         }
-        a{
-            margin: 60px 0;
+
+        a {
+            margin: 30px 0;
             display: table;
         }
+
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
     }
-    .app__hero-image{
+
+    .app__hero-image {
         width: 40%;
         text-align: center;
+
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
     }
 }

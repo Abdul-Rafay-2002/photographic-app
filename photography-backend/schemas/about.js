@@ -1,26 +1,21 @@
 export default {
-    name: 'services',
-    title: 'Services Section',
+    name: 'about',
+    title: 'About Section',
     type: 'document',
     fields: [
         {
             name: 'title',
-            title: 'Service Title',
+            title: 'Subtitle',
             type: 'string'
         },
         {
             name: 'description',
-            title: 'Service Description',
-            type: 'text',
-        },
-        {
-            name: 'price',
-            title: 'Service Price',
+            title: 'Subtitle Description',
             type: 'string'
         },
         {
-            name: 'imgUrl',
-            title: 'Service Feature Image',
+            name: 'iconUrl',
+            title: 'IconUrl',
             type: 'image',
             options: {
                 hotspot: true,

@@ -6,9 +6,12 @@
     padding: 0;
     overflow-x: hidden;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 40px;
 }
 
 :root {
@@ -73,7 +76,8 @@ a,
 p li,
 span,
 input,
-button {
+button,
+textarea {
     font: var(--text-base);
 }
 
@@ -84,7 +88,9 @@ a {
 li {
     list-style: none;
 }
-a.button{
+
+a.button,
+button {
     padding: .8rem 2rem;
     border-radius: 10px;
 }

@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.scss';
-import { Hero, MyServices } from './container/index';
-
+import { Hero, MyServices, Gallery, About, Contact, Footer } from './container/index';
+import { NavBar } from './components/index'
 const App = () => {
+
     return (
         <>
-            <Hero/>
-            <MyServices/>
+            <NavBar />
+            <Hero />
+            <MyServices />
+            <Gallery />
+            <About />
+            <Contact />
+            <Footer/>
         </>
     )
 };

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Pagination } from 'swiper';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { urlFor, client } from '../../client';
 import './MyServices.scss';
@@ -17,12 +18,12 @@ const MyServices = () => {
 	}, []);
 
 	return (
-		<div className='app__secondary'>
+		<div id='services' className='app__secondary'>
 			<div className='app__container'>
 				<div className='app__services-header'>
 					<h2>Our Services</h2>
 					<p>
-						Our If you have a business, we can provide high-quality product
+						Our If you have a business, we can provide high-quality product <br />
 						photography that showcases your products in the best possible light.
 					</p>
 				</div>
@@ -41,19 +42,24 @@ const MyServices = () => {
 					))}
 				</div> */}
 				<Swiper
-					// install Swiper modules
-					// breakpoints={{
-					// 	// when window width is >= 640px
-					// 	640: {
-					// 		width: 640,
-					// 		slidesPerView: 1,
-					// 	},
-					// 	// when window width is >= 768px
-					// 	768: {
-					// 		width: 768,
-					// 		slidesPerView: 2,
-					// 	},
-					// }}
+					breakpoints={{
+						340: {
+							slidesPerView: 1,
+							spaceBetween: 20,
+						},
+						640: {
+							slidesPerView: 1,
+							spaceBetween: 20,
+						},
+						768: {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						1024: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						},
+					}}
 					modules={[Pagination]}
 					slidesPerView={3}
 					spaceBetween={30}
@@ -67,7 +73,8 @@ const MyServices = () => {
 								<span>Price: {item.price}</span>
 							</div>
 							<div className='app__services-image'>
-								<img src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' />
+								<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='overlay' />
+								<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='simple' />
 							</div>
 						</SwiperSlide>
 					))}

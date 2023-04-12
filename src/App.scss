@@ -4,7 +4,7 @@
 	width: 100%;
 	min-height: 100%;
 	position: relative;
-	margin: 0 auto;
+	margin: 60px auto 40px auto;
 }
 
 .app__primary {
@@ -27,7 +27,8 @@
 		color: var(--primary-text-color);
 	}
 
-	a.button {
+	a.button,
+		button {
 		background-color: var(--primary-anchor-bg-color);
 
 		&:hover {
@@ -57,7 +58,8 @@
 		color: var(--secondary-text-color);
 	}
 
-	a.button {
+	a.button,
+	button {
 		background-color: var(--secondary-anchor-bg-color);
 
 		&:hover {

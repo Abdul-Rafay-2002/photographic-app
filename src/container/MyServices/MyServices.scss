@@ -1,17 +1,19 @@
 @import '../../index.css';
 
-.app__secondary{
+.app__secondary {
 	padding-bottom: 20px;
-	.swiper-wrapper{
+
+	.swiper-wrapper {
 		width: 10000%;
 		padding-bottom: 80px;
 	}
-	.swiper-pagination{
-		.swiper-pagination-bullet{
+
+	.swiper-pagination {
+		.swiper-pagination-bullet {
 			width: 15px;
 			height: 15px;
 
-			&.swiper-pagination-bullet-active{
+			&.swiper-pagination-bullet-active {
 				background-color: var(--secondary-anchor-bg-hover-color);
 			}
 		}
@@ -34,7 +36,7 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: flex-end;
-		
+
 		.app__services-content {
 			height: 100%;
 			overflow: hidden;
@@ -43,12 +45,13 @@
 
 			h3 {
 				margin: 10px 0;
-		
+				overflow: hidden;
+
 			}
 
 			p {
 				margin-bottom: 20px;
-			
+
 			}
 
 			span {
@@ -61,14 +64,35 @@
 
 		.app__services-image {
 			width: 100%;
-			height: 350px;
+			height: 420px;
 			overflow: hidden;
+			position: relative;
 
-			img {
+			img.simple {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				border-radius: 30px;
+				position: relative;
+				z-index: 0;
+				padding: 20px;
+
+			}
+
+			img.overlay {
+				position: absolute;
+				width: 90%;
+				height: 90%;
+				display: block;
+				z-index: 0;
+				top: 0;
+				left: 0;
+				object-fit: cover;
 				border-radius: 10px;
+				transform: translateX(19px) translateY(19px) rotate(5deg);
+				filter: brightness(1) invert(1) grayscale(100px);
+				opacity: 0.5;
+				transition: 0.2s all ease-out;
 			}
 		}
 	}
