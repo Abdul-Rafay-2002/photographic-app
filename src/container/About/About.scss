@@ -11,6 +11,7 @@
 
     @media screen and (max-width: 1020px) {
         flex-direction: column;
+        padding: 40px 0 20px 0;
     }
 
     .app__about-content {
@@ -25,7 +26,7 @@
             height: 390px;
 
             @media screen and (max-width: 500px) {
-                height: 420px;
+                height: 675px;
             }
 
             .swiper-wrapper {
@@ -90,11 +91,17 @@
 
                 .app__about-content-desc {
                     width: 80%;
+                    @media screen and (max-width: 500px) {
+                            text-align: center;
+                        }
 
                     h5 {
                         font-weight: 800;
                     }
                 }
+                                @media screen and (max-width: 500px) {
+                                    flex-direction: column;
+                                }
             }
         }
     }

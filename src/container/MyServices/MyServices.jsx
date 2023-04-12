@@ -6,6 +6,7 @@ import { urlFor, client } from '../../client';
 import './MyServices.scss';
 import "swiper/css";
 import "swiper/scss/pagination";
+import { motion } from 'framer-motion';
 
 const MyServices = () => {
 	const [servicesData, setServicesData] = useState([]);
@@ -65,18 +66,23 @@ const MyServices = () => {
 					spaceBetween={30}
 					pagination={{ clickable: true }}
 					className='app__services'>
-					{servicesData.map((item) => (
-						<SwiperSlide className='app__services-card' key={item.title}>
-							<div className='app__services-content'>
-								<h3>{item.title}</h3>
-								<p>{item.description}</p>
-								<span>Price: {item.price}</span>
-							</div>
-							<div className='app__services-image'>
-								<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='overlay' />
-								<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='simple' />
-							</div>
-						</SwiperSlide>
+					{servicesData.map((item, index) => (
+						<motion.div
+						  whileInView={{ x: [150, 0], opacity: [0, 1] }}
+							transition={{ duration: 1 }}
+							>
+							<SwiperSlide className='app__services-card' key={index}>
+								<div className='app__services-content'>
+									<h3>{item.title}</h3>
+									<p>{item.description}</p>
+									<span>Price: {item.price}</span>
+								</div>
+								<div className='app__services-image'>
+									<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='overlay' />
+									<LazyLoadImage src={urlFor(item.imgUrl)} alt={item.title} loading='lazy' className='simple' />
+								</div>
+							</SwiperSlide>
+						</motion.div>
 					))}
 				</Swiper>
 			</div>

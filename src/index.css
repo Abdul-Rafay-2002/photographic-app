@@ -1,75 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
+
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;
-    scroll-padding-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	scroll-padding-top: 40px;
 }
 
 :root {
-    /*font- varients*/
-    /* Large Devices */
-    --H1: 900 65px/90px 'Poppins', sans-serif;
-    --H2: 800 55px/76px 'Poppins', sans-serif;
-    --H3: 800 38px/52px 'Poppins', sans-serif;
-    --H4: 600 28px/38px 'Poppins', sans-serif;
-    --H5: 500 22px/30px 'Poppins', sans-serif;
-    --H6: 500 18px/29px 'Poppins', sans-serif;
-    --text-base: 400 16px/24px 'Poppins', sans-serif;
+	/*font- varients*/
+	/* Large Devices */
+	--H1: 900 65px/90px 'Poppins', sans-serif;
+	--H2: 800 55px/76px 'Poppins', sans-serif;
+	--H3: 800 38px/52px 'Poppins', sans-serif;
+	--H4: 600 28px/38px 'Poppins', sans-serif;
+	--H5: 500 22px/30px 'Poppins', sans-serif;
+	--H6: 500 18px/29px 'Poppins', sans-serif;
+	--text-base: 400 16px/24px 'Poppins', sans-serif;
 
-    /*Color variations*/
-    /* primaryColors */
-    --primary-bg-color: #022C43;
-    --primary-heading-color: #00818A;
-    --primary-text-color: #DBEDF3;
-    --primary-text-hover-color: #f5f5f5;
-    --primary-button-bg-color: #153B44;
-    --primary-button-bg-hover-color: #2D6E7E;
-    --primary-anchor-bg-color: #0EA293;
-    --primary-anchor-bg-hover-color: #27E1C1;
+	/* tablet device */
+	--H1-lg: 900 47px/68px 'Poppins', sans-serif;
+	--H2-lg: 800 42px/62px 'Poppins', sans-serif;
+	--H3-lg: 800 30px/47px 'Poppins', sans-serif;
+	--H4-lg: 600 28px/38px 'Poppins', sans-serif;
+	--H5-lg: 500 20px/27px 'Poppins', sans-serif;
+	--H6-lg: 500 18px/29px 'Poppins', sans-serif;
+	--text-base-lg: 400 16px/24px 'Poppins', sans-serif;
 
-    /* SecoundaryColors */
-    --secondary-bg-color: #ffff;
-    --secondary-heading-color: #072227;
-    --secondary-text-color: #383838;
-    --secondary-text-hover-color: #2C3333;
-    --secondary-button-bg-color: #62CDFF;
-    --secondary-button-bg-hover-color: #00E7FF;
-    --secondary-anchor-bg-color: #00A8CC;
-    --secondary-anchor-bg-hover-color: #0C7B93;
+	/* small device */
+	--H1-sm: 900 40px/56px 'Poppins', sans-serif;
+	--H2-sm: 800 38px/54px 'Poppins', sans-serif;
+	--H3-sm: 800 30px/38px 'Poppins',
+        sans-serif;
+	--H4-sm: 600 28px/38px 'Poppins', sans-serif;
+	--H5-sm: 500 18px/24px 'Poppins',
+        sans-serif;
+	--H6-sm: 500 18px/29px 'Poppins', sans-serif;
+	--text-base-sm: 400 14px/24px 'Poppins', sans-serif;
 
+	/*Color variations*/
+	/* primaryColors */
+	--primary-bg-color: #022c43;
+	--primary-heading-color: #00818a;
+	--primary-text-color: #dbedf3;
+	--primary-text-hover-color: #f5f5f5;
+	--primary-button-bg-color: #153b44;
+	--primary-button-bg-hover-color: #2d6e7e;
+	--primary-anchor-bg-color: #0ea293;
+	--primary-anchor-bg-hover-color: #27e1c1;
+
+	/* SecondaryColors */
+	--secondary-bg-color: #ffff;
+	--secondary-heading-color: #072227;
+	--secondary-text-color: #383838;
+	--secondary-text-hover-color: #2c3333;
+	--secondary-button-bg-color: #62cdff;
+	--secondary-button-bg-hover-color: #00e7ff;
+	--secondary-anchor-bg-color: #00a8cc;
+	--secondary-anchor-bg-hover-color: #0c7b93;
 }
 
 h1 {
-    font: var(--H1);
+	font: var(--H1);
 }
 
 h2 {
-    font: var(--H2);
+	font: var(--H2);
 }
 
 h3 {
-    font: var(--H3);
+	font: var(--H3);
 }
 
 h4 {
-    font: var(--H4);
+	font: var(--H4);
 }
 
 h5 {
-    font: var(--H5);
+	font: var(--H5);
 }
 
 h6 {
-    font: var(--H6);
+	font: var(--H6);
 }
 
 a,
@@ -78,19 +99,91 @@ span,
 input,
 button,
 textarea {
-    font: var(--text-base);
+	font: var(--text-base);
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a.button,
 button {
-    padding: .8rem 2rem;
-    border-radius: 10px;
+	padding: 0.8rem 2rem;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+	h1 {
+		font: var(--H1-lg);
+	}
+
+	h2 {
+		font: var(--H2-lg);
+	}
+
+	h3 {
+		font: var(--H3-lg);
+	}
+
+	h4 {
+		font: var(--H4-lg);
+	}
+
+	h5 {
+		font: var(--H5-lg);
+	}
+
+	h6 {
+		font: var(--H6-lg);
+	}
+
+	a,
+    p,
+	p li,
+	span,
+	input,
+	button,
+	textarea {
+		font: var(--text-base-lg);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font: var(--H1-sm);
+	}
+
+	h2 {
+		font: var(--H2-sm);
+	}
+
+	h3 {
+		font: var(--H3-sm);
+	}
+
+	h4 {
+		font: var(--H4-sm);
+	}
+
+	h5 {
+		font: var(--H5-sm);
+	}
+
+	h6 {
+		font: var(--H6-sm);
+	}
+
+	a,
+    p,
+	p li,
+	span,
+	input,
+	button,
+	textarea {
+		font: var(--text-base-sm);
+	}
 }

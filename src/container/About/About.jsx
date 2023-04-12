@@ -21,7 +21,7 @@ const About = () => {
 	}, []);
 
 	return (
-		<div>
+		<>
 			<div id='about' className='app__secondary'>
 				<div className='app__container'>
 					<div className='app__about-header'>
@@ -70,7 +70,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

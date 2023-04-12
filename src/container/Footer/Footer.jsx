@@ -7,14 +7,14 @@ const Footer = () => {
 		<>
 			<div className='footer'>
 				<p>
-					© {new Date().getFullYear()} All Right Reserved - Photographic App By{' '}
+					© {new Date().getFullYear()} All Right Reserved - Photographic React App By{' '}
 					<a
 						href='https://abdulrafayportfolio.vercel.app/'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img
 							src={Devlogo}
-							style={{ width: '65px', height: '45px' }}
+							style={{ width: '65px', height: '42px' }}
 							alt='logo'
 						/>
 					</a>

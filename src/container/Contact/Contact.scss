@@ -4,68 +4,82 @@
     text-align: center;
     margin-bottom: 40px;
 }
-.app__contact-content{
+
+.app__contact-content {
     display: flex;
     flex-direction: column-reverse;
-   
-.app__contact-form {
-    width: 50%;
-    margin: auto;
-    @media screen and (max-width: 992px) {
+
+    .app__contact-form {
+        width: 50%;
+        margin: auto;
+
+        @media screen and (max-width: 992px) {
             width: 100%;
         }
 
-    .app__contact-form-head {
-        display: flex;
+        .app__contact-form-head {
+            display: flex;
 
-        input {
-            height: 45px;
-            width: 50%;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 4px;
-            outline: none;
-            border: 1px solid #eee;
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+            }
+
+            input {
+                height: 45px;
+                width: 50%;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid #eee;
+
+                @media screen and (max-width: 500px) {
+                    width: 98.1%;
+                }
+            }
+        }
+
+        .app__contact-form-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            textarea {
+                width: 98.1%;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid #eee;
+            }
+
+            button {
+                border: none;
+                cursor: pointer;
+                margin-top: 20px;
+            }
         }
     }
 
-    .app__contact-form-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .app__contact-img {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
 
-        textarea {
-            width: 98.1%;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 4px;
-            outline: none;
-            border: 1px solid #eee;
+        img {
+            width: 100%;
+            height: 360px;
+            padding: 20px;
         }
 
-        button{
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
+        @media screen and (max-width: 992px) {
+            width: 100%;
         }
     }
-}
-.app__contact-img{
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
-    img{
-        width: 100%;
-        height: 360px;
-        padding: 20px;
+
+    h4 {
+        color: #fff;
+        width: 50%;
+        margin: 40px auto;
     }
-    @media screen and (max-width: 992px) {
-        width: 100%;
-    }
-}
-h4{
-    color: #fff;
-    width: 50%;
-    margin: 40px auto;
-}
 }

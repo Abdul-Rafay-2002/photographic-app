@@ -60,7 +60,7 @@ const Gallery = () => {
                         ))}
                 </div>
                 <div className='app__gallery-content'>
-                    {filterItem.map((item) => (
+                    {filterItem.map((item, index) => (
                         <motion.div
                             animate={animateCard}
                             transition={{ duration: 0.5, delayChildren: 0.5 }  }
